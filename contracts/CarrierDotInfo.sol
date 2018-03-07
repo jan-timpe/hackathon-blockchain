@@ -21,50 +21,50 @@ contract CarrierDotInfo {
     function getManagingContract() public view returns (address) {
         return managingContract;
     }
-    function getUsDotNumber() public view returns (bytes32) {
+    function getUsDotNumber() public view returns (string) {
         return usDotNumber;
     }
-    function getDbaName() public view returns (bytes32) {
+    function getDbaName() public view returns (string) {
         return dbaName;
     }
-    function getLegalName() public view returns (bytes32) {
+    function getLegalName() public view returns (string) {
         return legalName;
     }
-    function getStreetAddress() public view returns (bytes32) {
+    function getStreetAddress() public view returns (string) {
         return streetAddress;
     }
-    function getStreetPhone() public view returns (bytes32) {
+    function getStreetPhone() public view returns (string) {
         return streetPhone;
     }
-    function getMailingAddress() public view returns (bytes32) {
+    function getMailingAddress() public view returns (string) {
         return mailingAddress;
     }
-    function getMailingPhone() public view returns (bytes32) {
+    function getMailingPhone() public view returns (string) {
         return mailingPhone;
     }
 
     function setManagingContract (address _managingContract) public {
         managingContract = _managingContract;
     }
-    function setUsDontNumber (bytes32 _usDotNumber) public {
+    function setUsDontNumber (string _usDotNumber) public {
         usDotNumber = _usDotNumber;
     }
-    function setDbaName (bytes32 _dbaName) public {
+    function setDbaName (string _dbaName) public {
         dbaName = _dbaName;
     }
-    function setLegalName (bytes32 _legalName) public {
+    function setLegalName (string _legalName) public {
         legalName = _legalName;
     }
-    function setStreetAddress (bytes32 _streetAddress) public {
+    function setStreetAddress (string _streetAddress) public {
         streetAddress = _streetAddress;
     }
-    function setStreetPhone (bytes32 _streetPhone) public {
+    function setStreetPhone (string _streetPhone) public {
         streetPhone = _streetPhone;
     }
-    function setMailingAddress (bytes32 _mailingAddress) public {
+    function setMailingAddress (string _mailingAddress) public {
         mailingAddress = _mailingAddress;
     }
-    function setMailingPhone (bytes32 _mailingPhone) public {
+    function setMailingPhone (string _mailingPhone) public {
         mailingPhone = _mailingPhone;
     }
 
