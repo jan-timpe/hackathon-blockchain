@@ -28,7 +28,4 @@ contract('CarrierDotInfo', (accts) => {
 
 
 
-
-
-
 });
