@@ -23,71 +23,71 @@ contract CarrierContact {
         firstName = _val;
     }
 
-    function get_firstName() public view returns (bytes32) {
+    function get_firstName() public view returns (string) {
         return firstName;
     }
 
-    function getLastName() public view returns (bytes32) {
+    function getLastName() public view returns (string) {
         return lastName;
     }
 
-    function getJobTitle() public view returns (bytes32) {
+    function getJobTitle() public view returns (string) {
         return jobTitle;
     }
 
-    function getContractType() public view returns (bytes32) {
+    function getContractType() public view returns (string) {
         return contactType;
     }
 
-    function getPhoneNumber() public view returns (bytes32) {
+    function getPhoneNumber() public view returns (string) {
         return phone;
     }
 
-    function getMobilePhoneNumber() public view returns (bytes32) {
+    function getMobilePhoneNumber() public view returns (string) {
         return mobilePhone;
     }
 
-    function getFax() public view returns (bytes32) {
+    function getFax() public view returns (string) {
         return fax;
     }
 
-    function getEmail() public view returns (bytes32) {
+    function getEmail() public view returns (string) {
         return email;
     }
 
-    function setFirstName(bytes32 _firstName) public {
+    function setFirstName(string _firstName) public {
         firstName = _firstName;
     }
 
-    function setLastName(bytes32 _lastName) public {
+    function setLastName(string _lastName) public {
         lastName = _lastName;
     }
 
-    function setJobTitle(bytes32 _jobTitle) public {
+    function setJobTitle(string _jobTitle) public {
         jobTitle = _jobTitle;
     }
 
-    function gsetContractType(bytes32 _contactType) public {
+    function gsetContractType(string _contactType) public {
         contactType = _contactType;
     }
 
-    function setPhoneNumber(bytes32 _phone) public {
+    function setPhoneNumber(string _phone) public {
         phone = _phone;
     }
 
-    function setMobilePhoneNumber(bytes32 _mobilePhone) public {
+    function setMobilePhoneNumber(string _mobilePhone) public {
         mobilePhone = _mobilePhone;
     }
 
-    function setFax(bytes32 _fax) public {
+    function setFax(string _fax) public {
         fax = _fax;
     }
 
-    function setEmail(bytes32 _email) public {
+    function setEmail(string _email) public {
         email = _email;
     }
 
-    function set_lastName(bytes32 _val) public {
+    function set_lastName(string _val) public {
         require(msg.sender == managingContract);
         lastName = _val;
     }
