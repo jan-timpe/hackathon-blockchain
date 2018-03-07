@@ -28,4 +28,10 @@ contract('Carrier', (accts) => {
 
 
 
+<<<<<<< HEAD
 });
+=======
+
+
+});
+>>>>>>> master
