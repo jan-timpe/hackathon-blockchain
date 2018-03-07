@@ -14,81 +14,59 @@ contract CarrierDotInfo {
     string public mailingAddress;
     string public mailingPhone;
 
-
-
     function CarrierDotInfo() public {
         managingContract = msg.sender;
     }
 
-    function set_usDotNumber(string _val) public {
-        require(msg.sender == managingContract);
-        usDotNumber = _val;
+    function getManagingContract() public view returns (address) {
+        return managingContract;
     }
-
-    function get_usDotNumber() public view returns (string) {
+    function getUsDotNumber() public view returns (bytes32) {
         return usDotNumber;
     }
-
-
-    function set_dbaName(string _val) public {
-        require(msg.sender == managingContract);
-        dbaName = _val;
-    }
-
-    function get_dbaName() public view returns (string) {
+    function getDbaName() public view returns (bytes32) {
         return dbaName;
     }
-
-
-    function set_legalName(string _val) public {
-        require(msg.sender == managingContract);
-        legalName = _val;
-    }
-
-    function get_legalName() public view returns (string) {
+    function getLegalName() public view returns (bytes32) {
         return legalName;
     }
-
-
-    function set_streetAddress(string _val) public {
-        require(msg.sender == managingContract);
-        streetAddress = _val;
-    }
-
-    function get_streetAddress() public view returns (string) {
+    function getStreetAddress() public view returns (bytes32) {
         return streetAddress;
     }
-
-
-    function set_streetPhone(string _val) public {
-        require(msg.sender == managingContract);
-        streetPhone = _val;
-    }
-
-    function get_streetPhone() public view returns (string) {
+    function getStreetPhone() public view returns (bytes32) {
         return streetPhone;
     }
-
-
-    function set_mailingAddress(string _val) public {
-        require(msg.sender == managingContract);
-        mailingAddress = _val;
-    }
-
-    function get_mailingAddress() public view returns (string) {
+    function getMailingAddress() public view returns (bytes32) {
         return mailingAddress;
     }
-
-
-    function set_mailingPhone(string _val) public {
-        require(msg.sender == managingContract);
-        mailingPhone = _val;
-    }
-
-    function get_mailingPhone() public view returns (string) {
+    function getMailingPhone() public view returns (bytes32) {
         return mailingPhone;
     }
 
+    function setManagingContract (address _managingContract) public {
+        managingContract = _managingContract;
+    }
+    function setUsDontNumber (bytes32 _usDotNumber) public {
+        usDotNumber = _usDotNumber;
+    }
+    function setDbaName (bytes32 _dbaName) public {
+        dbaName = _dbaName;
+    }
+    function setLegalName (bytes32 _legalName) public {
+        legalName = _legalName;
+    }
+    function setStreetAddress (bytes32 _streetAddress) public {
+        streetAddress = _streetAddress;
+    }
+    function setStreetPhone (bytes32 _streetPhone) public {
+        streetPhone = _streetPhone;
+    }
+    function setMailingAddress (bytes32 _mailingAddress) public {
+        mailingAddress = _mailingAddress;
+    }
+    function setMailingPhone (bytes32 _mailingPhone) public {
+        mailingPhone = _mailingPhone;
+    }
 
 
 }
