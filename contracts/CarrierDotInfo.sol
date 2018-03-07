@@ -5,11 +5,19 @@ contract CarrierDotInfo {
 
     // "dot census" -- dot licensing and insurance can be another contract
 
-    bytes32 public dba_name;
-    bytes32 public legal_name;
-    bytes32 public street_address;
-    bytes32 public street_phone;
-    bytes32 public mailing_address;
-    bytes32 public mailing_phone;
+    address public managingContract;
+    bytes32 public usDotNumber;
+    bytes32 public dbaName;
+    bytes32 public legalName;
+    bytes32 public streetAddress;
+    bytes32 public streetPhone;
+    bytes32 public mailingAddress;
+    bytes32 public mailingPhone;
+
+
+
+    function CarrierDotInfo() public {
+        managingContract = msg.sender;
+    }
 
 }
