@@ -23,7 +23,71 @@ contract CarrierContact {
         firstName = _val;
     }
 
-    function set_lastName(string _val) public {
+    function get_firstName() public view returns (bytes32) {
+        return firstName;
+    }
+
+    function getLastName() public view returns (bytes32) {
+        return lastName;
+    }
+
+    function getJobTitle() public view returns (bytes32) {
+        return jobTitle;
+    }
+
+    function getContractType() public view returns (bytes32) {
+        return contactType;
+    }
+
+    function getPhoneNumber() public view returns (bytes32) {
+        return phone;
+    }
+
+    function getMobilePhoneNumber() public view returns (bytes32) {
+        return mobilePhone;
+    }
+
+    function getFax() public view returns (bytes32) {
+        return fax;
+    }
+
+    function getEmail() public view returns (bytes32) {
+        return email;
+    }
+
+    function setFirstName(bytes32 _firstName) public {
+        firstName = _firstName;
+    }
+
+    function setLastName(bytes32 _lastName) public {
+        lastName = _lastName;
+    }
+
+    function setJobTitle(bytes32 _jobTitle) public {
+        jobTitle = _jobTitle;
+    }
+
+    function gsetContractType(bytes32 _contactType) public {
+        contactType = _contactType;
+    }
+
+    function setPhoneNumber(bytes32 _phone) public {
+        phone = _phone;
+    }
+
+    function setMobilePhoneNumber(bytes32 _mobilePhone) public {
+        mobilePhone = _mobilePhone;
+    }
+
+    function setFax(bytes32 _fax) public {
+        fax = _fax;
+    }
+
+    function setEmail(bytes32 _email) public {
+        email = _email;
+    }
+
+    function set_lastName(bytes32 _val) public {
         require(msg.sender == managingContract);
         lastName = _val;
     }
