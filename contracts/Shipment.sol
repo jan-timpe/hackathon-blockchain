@@ -9,8 +9,14 @@ contract Shipment {
     address public truck;
 
 
+    modifier onlyOwner() {
+        require(msg.sender == owner);
+        _;
+    } 
+
     enum Status {
         Initiated,
+        ReadyForPickup,
         Accepted,
         Dispatched,
         PickedUp,
@@ -38,6 +44,37 @@ contract Shipment {
         status = Status.Accepted;
     }
 
+    function changeStatusToAccepted()  onlyOwner {
+        status = Status.Accepted;
+    }
+
+    function changeStatusToReadyForPickup() onlyOwner {
+        status = Status.ReadyForPickup;
+    }
+
+    function changeStatusToAccepted() onlyOwner {
+        status = Status.Accepted;
+    }
+
+    function changeStatusToDispatched() onlyOwner {
+        status = Status.Dispatched;
+    }
+
+    function changeStatusToPickedUp() onlyOwner {
+        status = Status.PickedUp;
+    }
+
+    function changeStatusToInTransit() onlyOwner {
+        status = Status.InTransit;
+    }
+
+    function changeStatusToShipmentArrived() onlyOwner {
+        status = Status.ShipmentArrived;
+    }
+
+    function changeStatusToComplete() onlyOwner {
+        status = Status.Complete;
+    }
 
 
 }
