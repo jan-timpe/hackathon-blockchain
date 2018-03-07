@@ -1,10 +1,10 @@
-var Carrier = artifacts.require("./Carrier");
+var Carrier = artifacts.require("./CarrierDontInfo");
 
-contract('Carrier', (accts) => {
+contract('CarrierDotInfo', (accts) => {
 
-  it('should allow contacts to be added', () => {
+  it('getManagingContract', () => {
 
-    return Carrier.deployed().then( (instance) => {
+    return CarrierDontInfo.deployed().then( (instance) => {
       // return xyz;
     }).then( (v) => {
       assert.equal(v.valueOf(), "", "condition");
