@@ -34,5 +34,4 @@ contract('Carrier', (accts) => {
 
 
 
-
 });
