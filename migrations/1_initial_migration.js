@@ -6,4 +6,6 @@ var CarrierDotInfo = artifacts.require("./CarrierDotInfo");
 module.exports = function(deployer) {
   deployer.deploy(Migrations);
   deployer.deploy(Carrier);
+  deployer.deploy(CarrierContact);
+  deployer.deploy(CarrierDotInfo);
 };
