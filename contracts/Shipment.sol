@@ -44,35 +44,31 @@ contract Shipment {
         status = Status.Accepted;
     }
 
-    function changeStatusToAccepted()  onlyOwner {
-        status = Status.Accepted;
-    }
-
-    function changeStatusToReadyForPickup() onlyOwner {
+    function changeStatusToReadyForPickup() onlyOwner public {
         status = Status.ReadyForPickup;
     }
 
-    function changeStatusToAccepted() onlyOwner {
+    function changeStatusToAccepted() onlyOwner public { 
         status = Status.Accepted;
     }
 
-    function changeStatusToDispatched() onlyOwner {
+    function changeStatusToDispatched() onlyOwner public {
         status = Status.Dispatched;
     }
 
-    function changeStatusToPickedUp() onlyOwner {
+    function changeStatusToPickedUp() onlyOwner public {
         status = Status.PickedUp;
     }
 
-    function changeStatusToInTransit() onlyOwner {
+    function changeStatusToInTransit() onlyOwner public {
         status = Status.InTransit;
     }
 
-    function changeStatusToShipmentArrived() onlyOwner {
+    function changeStatusToShipmentArrived() onlyOwner public {
         status = Status.ShipmentArrived;
     }
 
-    function changeStatusToComplete() onlyOwner {
+    function changeStatusToComplete() onlyOwner public {
         status = Status.Complete;
     }
 
