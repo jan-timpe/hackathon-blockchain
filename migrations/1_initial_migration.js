@@ -4,6 +4,8 @@ var CarrierContact = artifacts.require("./CarrierContact");
 var CarrierDotInfo = artifacts.require("./CarrierDotInfo");
 var CarrierEquipment = artifacts.require("./CarrierEquipment");
 var Shipment = artifacts.require("./Shipment");
+var ClientAttached = artifacts.require("./ClientAttached");
+
 
 module.exports = function(deployer) {
   deployer.deploy(Migrations);
@@ -13,5 +15,6 @@ module.exports = function(deployer) {
   deployer.deploy(CarrierContact);
   deployer.deploy(CarrierDotInfo);
   deployer.deploy(CarrierEquipment);
+  deployer.deploy(ClientAttached);
   // deployer.deploy(Shipment, new Carrier());
 };
