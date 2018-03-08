@@ -18,53 +18,29 @@ contract CarrierDotInfo {
         managingContract = msg.sender;
     }
 
-    function getManagingContract() public view returns (address) {
-        return managingContract;
-    }
-    function getUsDotNumber() public view returns (string) {
-        return usDotNumber;
-    }
-    function getDbaName() public view returns (string) {
-        return dbaName;
-    }
-    function getLegalName() public view returns (string) {
-        return legalName;
-    }
-    function getStreetAddress() public view returns (string) {
-        return streetAddress;
-    }
-    function getStreetPhone() public view returns (string) {
-        return streetPhone;
-    }
-    function getMailingAddress() public view returns (string) {
-        return mailingAddress;
-    }
-    function getMailingPhone() public view returns (string) {
-        return mailingPhone;
-    }
-
-    function setManagingContract (address _managingContract) public {
+    function setManagingContract(address _managingContract) public {
         managingContract = _managingContract;
     }
-    function setUsDontNumber (string _usDotNumber) public {
+
+    function setUsDotNumber(string _usDotNumber) public {
         usDotNumber = _usDotNumber;
     }
-    function setDbaName (string _dbaName) public {
+    function setDbaName(string _dbaName) public {
         dbaName = _dbaName;
     }
-    function setLegalName (string _legalName) public {
+    function setLegalName(string _legalName) public {
         legalName = _legalName;
     }
-    function setStreetAddress (string _streetAddress) public {
+    function setStreetAddress(string _streetAddress) public {
         streetAddress = _streetAddress;
     }
-    function setStreetPhone (string _streetPhone) public {
+    function setStreetPhone(string _streetPhone) public {
         streetPhone = _streetPhone;
     }
-    function setMailingAddress (string _mailingAddress) public {
+    function setMailingAddress(string _mailingAddress) public {
         mailingAddress = _mailingAddress;
     }
-    function setMailingPhone (string _mailingPhone) public {
+    function setMailingPhone(string _mailingPhone) public {
         mailingPhone = _mailingPhone;
     }
 
