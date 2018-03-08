@@ -5,7 +5,6 @@ contract('CarrierDotInfo', (accts) => {
   it('should update usDotNumber', () => {
     return CarrierDotInfo.deployed().then( (instance) => {
       return instance.setUsDotNumber("usDotNumber").then(()=> {
-
         return instance.usDotNumber()
       })
     }).then( (v) => {
